@@ -1,0 +1,224 @@
+/* GENERAL STYLING */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/* NAVIGATION BAR */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: grey;
+  height: 40px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  text-align: center;
+  margin: 10px 15px 10px 0;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+/* HOME SECTION  */
+#home {
+  margin: 5vh 0 0 0;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.name img {
+  width: 150px;
+  margin: 10px;
+}
+
+/* text effect */
+#typing-text {
+  height: 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30);
+  text-align: center;
+  margin: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* Dark Mode Styles */
+.container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.container span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container span img {
+  width: 25%;
+  margin: 6px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(45px);
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .slider {
+  background-color: #888;
+}
+
+.dark-mode .slider:before {
+  background-color: #444;
+}
+
+/* ABOUT ME */
+#about-me{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* background-color: #2196F3; */
+}
+
+/* PROJECTS */
+#projects{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* background-color: #2196F3; */
+}
+
+/* SKILLS */
+#skills {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #2196F3;
+}
+
+.skills-content {
+  text-align: center;
+}
+
+.skill-sets {
+  margin: 50px 0 0 0;
+  display: flex;
+  gap: 40px;
+}
+
+.each-skill {
+  text-align: center;
+  width: 100px;
+  background: #444;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#skills img {
+  width: 50px;
+}
+
+#skills P {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* EXPERIENCE */
+#experience{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* background-color: #2196F3; */
+}
