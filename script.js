@@ -1,3 +1,4 @@
+// LIGHT AND DARK MOOD
 const modeSwitch = document.getElementById('mode-switch');
 
 modeSwitch.addEventListener('change', () => {
@@ -5,17 +6,13 @@ modeSwitch.addEventListener('change', () => {
 });
 
 // text effect starts here
-// List of text to display
 const texts = [
   "Front-End Developer",
-  "HTML | CSS | JAVASCRIPT",
-  "FIGMA/PSD MOCK-UP TO HTML",
-  "Feel free to explore."
+  "Graphic Designer",
+  "FIGMA | PSD | XD  DESIGNS TO HTML"
 ];
-
 // Index for tracking current text
 let index = 0;
-
 // Function to type text
 function typeText() {
   const text = texts[index];
@@ -47,8 +44,13 @@ function typeText() {
   // Start typing
   typeCharacter(0);
 }
-
 // Start typing on page load
 window.onload = typeText;
 
-// text effect ends here
+// FOR PROJECT POP
+function openPopup(projectId) {
+  document.getElementById(projectId).style.display = "block";
+}
+function closePopup(projectId) {
+  document.getElementById(projectId).style.display = "none";
+}

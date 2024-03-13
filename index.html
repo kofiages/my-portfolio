@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dark Mode & Light Mode Switch</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <style>
+      .project-popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 300px;
+        background-color: #fff;
+        border: 1px solid #000;
+        padding: 20px;
+      }
+
+      .closeButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+
+      .closeButton:hover {
+        color: red;
+      }
+
+      .each-project {
+        cursor: pointer;
+      }
+
+      .each-project img {
+        width: 100%;
+        height: auto;
+      }
+    </style> -->
   </head>
   <body>
+    <!-- LIGHT/DARK MOOD WITH NAVBAR -->
     <nav>
+      <!-- dark/light mood -->
+      <div class="container">
+        <label class="switch">
+          <input type="checkbox" id="mode-switch" />
+          <span class="slider">
+            <img src="images/sun-regular.svg" alt="" />
+            <img src="images/moon-solid.svg" alt="" />
+          </span>
+        </label>
+      </div>
+      <!-- NAVIGATION MENU -->
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about-me">ABOUT ME</a></li>
@@ -17,7 +64,7 @@
       </ul>
     </nav>
 
-    <!-- HOME -->
+    <!-- FRONTPAGE AND TEXT EFFECT -->
     <section id="home">
       <div class="home-content">
         <!-- my name -->
@@ -28,17 +75,6 @@
 
         <!-- text effect -->
         <div id="typing-text"></div>
-
-        <!-- dark/light mood -->
-        <div class="container">
-          <label class="switch">
-            <input type="checkbox" id="mode-switch" />
-            <span class="slider">
-              <img src="images/sun-regular.svg" alt="" />
-              <img src="images/moon-solid.svg" alt="" />
-            </span>
-          </label>
-        </div>
       </div>
     </section>
 
@@ -49,7 +85,53 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>PROJECTS</h2>
+      <div class="project-content">
+        <h2>PROJECTS</h2>
+        <div class="project-list">
+          <div class="each-project" onclick="openPopup('project1')">
+            <img src="images/project1.png" alt="" />
+            <p>2020</p>
+            <h3>ANIMAL SHELTER</h3>
+          </div>
+
+          <div class="each-project" onclick="openPopup('project2')">
+            <img src="images/project2.png" alt="" />
+            <p>2020</p>
+            <h3>ANIMAL SHELTER</h3>
+          </div>
+
+          <div class="each-project" onclick="openPopup('project3')">
+            <img src="images/project3.png" alt="" />
+            <p>2020</p>
+            <h3>ANIMAL SHELTER</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT POP UP -->
+      <div id="project1" class="project-popup">
+        <span class="closeButton" onclick="closePopup('project1')"
+          >&times;</span
+        >
+        <h2>Project 1 Details</h2>
+        <p>Detailed information about Project 1.</p>
+      </div>
+
+      <div id="project2" class="project-popup">
+        <span class="closeButton" onclick="closePopup('project2')"
+          >&times;</span
+        >
+        <h2>Project 2 Details</h2>
+        <p>Detailed information about Project 2.</p>
+      </div>
+
+      <div id="project3" class="project-popup">
+        <span class="closeButton" onclick="closePopup('project3')"
+          >&times;</span
+        >
+        <h2>Project 3 Details</h2>
+        <p>Detailed information about Project 3.</p>
+      </div>
     </section>
 
     <!-- SKILLS -->
@@ -58,16 +140,24 @@
         <h2>SKILLS</h2>
         <div class="skill-sets">
           <div class="each-skill">
-            <img src="images/2.png" alt="">
+            <img src="images/2.png" alt="" />
             <p>HTML</p>
           </div>
           <div class="each-skill">
-            <img src="images/3.png" alt="">
+            <img src="images/3.png" alt="" />
             <p>CSS</p>
           </div>
           <div class="each-skill">
-            <img src="images/1.png" alt="">
+            <img src="images/1.png" alt="" />
             <p>JAVASCRIPT</p>
+          </div>
+          <div class="each-skill">
+            <img src="images/4.png" alt="" />
+            <p>PHOTOSHOP</p>
+          </div>
+          <div class="each-skill">
+            <img src="images/5.png" alt="" />
+            <p>CORELDRAW</p>
           </div>
         </div>
       </div>
@@ -82,6 +172,8 @@
     <footer>
       <a href="#"><img src="" alt="" /></a>
     </footer>
+
+    <a href="test.html">test page</a>
 
     <script src="script.js"></script>
   </body>
