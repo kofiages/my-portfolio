@@ -1,15 +1,17 @@
 // LIGHT AND DARK MOOD
-const modeSwitch = document.getElementById('mode-switch');
+const modeSwitch = document.getElementById("mode-switch");
 
-modeSwitch.addEventListener('change', () => {
-  document.body.classList.toggle('dark-mode');
+modeSwitch.addEventListener("change", () => {
+  document.body.classList.toggle("dark-mode");
 });
+
+
 
 // text effect starts here
 const texts = [
   "Front-End Developer",
   "Graphic Designer",
-  "FIGMA | PSD | XD  DESIGNS TO HTML"
+  "FIGMA | PSD | XD  DESIGNS TO HTML",
 ];
 // Index for tracking current text
 let index = 0;
@@ -46,6 +48,14 @@ function typeText() {
 }
 // Start typing on page load
 window.onload = typeText;
+
+
+
+
+
+
+
+
 
 // FOR PROJECT POP
 function openPopup(projectId) {
