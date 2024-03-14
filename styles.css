@@ -8,7 +8,7 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
-/* NAVIGATION BAR */
+/* NAVIGATION BAR WITH DRK/LIGHT MOOD */
 nav {
   width: 100%;
   position: fixed;
@@ -17,69 +17,6 @@ nav {
   height: 40px;
   display: flex;
   justify-content: space-between;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: right;
-  gap: 20px;
-  text-align: center;
-  margin: 10px 15px 10px 0;
-}
-
-nav ul a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul a:hover {
-  text-decoration: none;
-  border-bottom: 3px solid rgb(255, 255, 255);
-}
-
-/* HOME SECTION  */
-#home {
-  margin: 5vh 0 0 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  /* background-color: #2196F3; */
-}
-
-.name {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.name img {
-  width: 150px;
-  margin: 10px;
-}
-
-/* text effect */
-#typing-text {
-  height: 25px;
-  font-family: 'Arial', sans-serif;
-  font-size: 1.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(30);
-  text-align: center;
-  margin: 10px;
-  width: 400px;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
 }
 
 /* Dark Mode Styles */
@@ -156,8 +93,74 @@ input:checked+.slider:before {
   background-color: #444;
 }
 
+/* NAVIGATION MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  text-align: center;
+  margin: 10px 15px 10px 0;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+/* HOME SECTION  */
+#home {
+  margin: 5vh 0 0 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* background-color: #2196F3; */
+}
+
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.name img {
+  width: 150px;
+  margin: 10px;
+}
+
+/* text effect */
+#typing-text {
+  height: 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30);
+  text-align: center;
+  margin: 10px;
+  width: 400px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+
+
 /* ABOUT ME */
-#about-me{
+#about-me {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -167,7 +170,7 @@ input:checked+.slider:before {
 }
 
 /* PROJECTS */
-#projects{
+#projects {
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -180,6 +183,7 @@ input:checked+.slider:before {
 .project-content {
   text-align: center;
 }
+
 .project-list {
   margin: 50px 0 0 0;
   display: flex;
@@ -189,9 +193,10 @@ input:checked+.slider:before {
 .each-project {
   text-align: center;
   width: 400px;
-  background:#222;
+  background: #222;
   padding: 15px 15px 0 15px;
 }
+
 .each-project:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -206,13 +211,15 @@ input:checked+.slider:before {
   color: #fff;
   margin: 5px;
 }
+
 #projects P {
   font-size: 1rem;
-  color:#222;
+  color: #222;
   margin: 0 auto;
   background-color: #fff;
   width: 50px;
 }
+
 .project-popup {
   display: none;
   position: fixed;
@@ -287,7 +294,7 @@ input:checked+.slider:before {
 }
 
 /* EXPERIENCE */
-#experience{
+#experience {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -295,5 +302,3 @@ input:checked+.slider:before {
   font-size: 2rem;
   /* background-color: #2196F3; */
 }
-
-
