@@ -8,6 +8,7 @@ body {
   font-family: "Truculenta";
   font-size: 1.5rem;
   transition: background-color 0.5s, color 0.5s;
+  background-color: #2196F3;
 }
 
 /* NAVIGATION BAR WITH DRK/LIGHT MOOD */
@@ -103,7 +104,7 @@ nav ul {
   justify-content: right;
   gap: 20px;
   text-align: center;
-  margin: 10px 15px 10px 0;
+  margin: 2.5px 15px 10px 0;
 }
 
 nav ul a {
@@ -165,14 +166,65 @@ nav ul a:hover {
 
 /* ABOUT ME */
 #about-me {
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
-  /* background-color: #2196F3; */
+  text-align: center;
+  background-color: #222;
+  color: #fff;
 }
 
+#about-me h2 {
+  font-size: 3rem;
+  margin: 20px 0 20px 0;
+}
+
+#about-me #content {
+  margin: 20px 0 70px 0;
+}
+
+#personal {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#passport{
+  padding: 10px;
+  width: 210px;
+ box-shadow: 2px 2px 9px #000000;
+ /* background-color: #222; */
+ color: #fff;
+ background-color: #444;
+ outline: 1px solid rgb(255, 255, 255);
+}
+
+#passport img {
+ width: 200px;
+ outline: 2px solid rgb(255, 255, 255);
+ /* box-shadow: 2px 2px 4px #ffffff; */
+}
+
+#about-me #my-skills{
+  display: ;
+}
+
+#about-me #my-skills img{
+  width: 50px;
+  box-shadow: 0 0 0;
+  outline: 0;
+}
+
+#about-me p {
+  font-size: 1.35rem;
+  width: 800px;
+  padding: 50px;
+  text-align: justify;
+  line-height: 2.2rem;
+  /* margin-bottom: 32px; */
+}
 /* PROJECTS */
 #projects {
   height: 80vh;
@@ -180,7 +232,6 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  background-color: #2196F3;
   color: #fff;
 }
 
