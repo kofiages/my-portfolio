@@ -11,162 +11,169 @@
     />
   </head>
   <body>
-    <!-- LIGHT/DARK MOOD WITH NAVBAR -->
-    <nav>
-      <!-- dark/light mood -->
-      <div class="container">
-        <label class="switch">
-          <input type="checkbox" id="mode-switch" />
-          <span class="slider">
-            <img src="images/sun-regular.svg" alt="" />
-            <img src="images/moon-solid.svg" alt="" />
-          </span>
-        </label>
-      </div>
-      <!-- NAVIGATION MENU -->
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-      </ul>
-    </nav>
+ <!-- LIGHT/DARK MOOD WITH NAVBAR -->
+ <nav>
+  <!-- dark/light mood -->
+  <div class="container">
+    <label class="switch">
+      <input type="checkbox" id="mode-switch" />
+      <span class="slider">
+        <img src="images/sun-regular.svg" alt="" />
+        <img src="images/moon-solid.svg" alt="" />
+      </span>
+    </label>
+  </div>
+  <!-- NAVIGATION MENU -->
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-me">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+</nav>
 
-    <!-- FRONTPAGE AND TEXT EFFECT -->
-    <section id="home">
-      <div class="home-content">
-        <!-- my name -->
-        <div class="name">
-          <img src="images/laptop-code-solid.svg" alt="" />
-          <h1>Joshua Stephen Sasu</h1>
-        </div>
+<!-- FRONTPAGE AND TEXT EFFECT -->
+<section id="home">
+  <div class="home-content">
+    <!-- my name -->
+    <div id="name">
+      <img src="images/laptop-code-solid.svg" alt="" />
+      <h1>Joshua Stephen Sasu</h1>
+    </div>
 
-        <!-- text effect -->
-        <div id="typing-text"></div>
-      </div>
-    </section>
+    <!-- text effect -->
+    <div id="typing-text"></div>
+  </div>
+</section>
 
-    <!-- ABOUT ME -->
-    <section id="about-me">
-      <div id="content">
-        <h2>ABOUT ME</h2>
-        <div id="personal">
-          <div id="passport">
-            <img src="images/passport.jpg" alt="" />
-            <div id="my-skills">
-              <img src="images/22.png" alt="" />
-              <img src="images/33.png" alt="" />
-              <img src="images/11.png" alt="" />
-              <img src="images/44.png" alt="" />
-              <img src="images/55.png" alt="" />
-            </div>
-          </div>
-          <p>
-            Holla, i'm Joshua Stephen Sasu, a recent computer science graduate with a foundation in HTML, CSS, and JavaScript, and i am eager to embark on a journey into the realm of Front-End Development. Throughout my academic tenure, I have honed not only technical expertise but also a keen understanding of web design and development intricacies through various school projects.
-            <br>
-            My proficiency extends beyond coding; I bring a creative edge with a basic background in graphic design, using tools like Photoshop, CorelDRAW. This fusion of technical and design skills has been a ocal point of my educational pursuits, aimed at delivering captivating digital experiences. 
-            <br> 
-            I am particularly drawn to companies like Coalition Technologies, known for their commitment to innovation and client satisfaction. I am eager to explore opportunities where I can leverage my skills to contribute fresh perspectives and innovative ideas within the dynamic field of Front-End Development. 
-            <br>
-            Thank you 💜
-          </p>
+<!-- ABOUT ME -->
+<section id="about-me">
+  <div id="content">
+    <h2>ABOUT ME</h2>
+    <div id="personal">
+      <div id="passport">
+        <img src="images/passport.jpg" alt="" />
+        <div id="my-skills">
+          <img src="images/22.png" alt="" />
+          <img src="images/33.png" alt="" />
+          <img src="images/11.png" alt="" />
+          <img src="images/44.png" alt="" />
+          <img src="images/55.png" alt="" />
         </div>
       </div>
-    </section>
+      <p>
+        Holla, i'm Joshua Stephen Sasu, a recent computer science graduate with a foundation in HTML, CSS, and JavaScript, and i am eager to embark on a journey into the realm of Front-End Development. Throughout my academic tenure, I have honed not only technical expertise but also a keen understanding of web design and development intricacies through various school projects.
+        <br>
+        My proficiency extends beyond coding; I bring a creative edge with a basic background in graphic design, using tools like Photoshop, CorelDRAW. This fusion of technical and design skills has been a ocal point of my educational pursuits, aimed at delivering captivating digital experiences. 
+        <br> 
+        I am particularly drawn to companies like Coalition Technologies, known for their commitment to innovation and client satisfaction. I am eager to explore opportunities where I can leverage my skills to contribute fresh perspectives and innovative ideas within the dynamic field of Front-End Development. 
+        <br>
+        Thank you 💜
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="project-content">
-        <h2>PROJECTS</h2>
-        <div class="project-list">
-          <div class="each-project" onclick="openPopup('project1')">
-            <img src="images/project1.png" alt="" />
-            <p>2020</p>
-            <h3>ANIMAL SHELTER</h3>
-          </div>
-
-          <div class="each-project" onclick="openPopup('project2')">
-            <img src="images/project2.png" alt="" />
-            <p>2020</p>
-            <h3>ANIMAL SHELTER</h3>
-          </div>
-
-          <div class="each-project" onclick="openPopup('project3')">
-            <img src="images/project3.png" alt="" />
-            <p>2020</p>
-            <h3>ANIMAL SHELTER</h3>
-          </div>
-        </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="project-content">
+    <h2>PROJECTS</h2>
+    <div class="project-list">
+      <div class="each-project" onclick="openPopup('project1')">
+        <img src="images/project1.png" alt="" />
+        <p>2020</p>
+        <h3>ANIMAL SHELTER</h3>
       </div>
 
-      <!-- PROJECT POP UP -->
-      <div id="project1" class="project-popup">
-        <span class="closeButton" onclick="closePopup('project1')"
-          >&times;</span
-        >
-        <h2>Project 1 Details</h2>
-        <p>Detailed information about Project 1.</p>
+      <div class="each-project" onclick="openPopup('project2')">
+        <img src="images/project2.png" alt="" />
+        <p>2020</p>
+        <h3>ANIMAL SHELTER</h3>
       </div>
 
-      <div id="project2" class="project-popup">
-        <span class="closeButton" onclick="closePopup('project2')"
-          >&times;</span
-        >
-        <h2>Project 2 Details</h2>
-        <p>Detailed information about Project 2.</p>
+      <div class="each-project" onclick="openPopup('project3')">
+        <img src="images/project3.png" alt="" />
+        <p>2020</p>
+        <h3>ANIMAL SHELTER</h3>
       </div>
+    </div>
+  </div>
 
-      <div id="project3" class="project-popup">
-        <span class="closeButton" onclick="closePopup('project3')"
-          >&times;</span
-        >
-        <h2>Project 3 Details</h2>
-        <p>Detailed information about Project 3.</p>
+  <!-- PROJECT POP UP -->
+  <div id="project1" class="project-popup">
+    <span class="closeButton" onclick="closePopup('project1')"
+      >&times;</span
+    >
+    <h2>Project 1 Details</h2>
+    <p>Detailed information about Project 1.</p>
+  </div>
+
+  <div id="project2" class="project-popup">
+    <span class="closeButton" onclick="closePopup('project2')"
+      >&times;</span
+    >
+    <h2>Project 2 Details</h2>
+    <p>Detailed information about Project 2.</p>
+  </div>
+
+  <div id="project3" class="project-popup">
+    <span class="closeButton" onclick="closePopup('project3')"
+      >&times;</span
+    >
+    <h2>Project 3 Details</h2>
+    <p>Detailed information about Project 3.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-content">
+    <h2>SKILLS</h2>
+    <div class="skill-sets">
+      <div class="each-skill">
+        <img src="images/2.png" alt="" />
+        <p>HTML</p>
       </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="skills-content">
-        <h2>SKILLS</h2>
-        <div class="skill-sets">
-          <div class="each-skill">
-            <img src="images/2.png" alt="" />
-            <p>HTML</p>
-          </div>
-          <div class="each-skill">
-            <img src="images/3.png" alt="" />
-            <p>CSS</p>
-          </div>
-          <div class="each-skill">
-            <img src="images/1.png" alt="" />
-            <p>JAVASCRIPT</p>
-          </div>
-          <div class="each-skill">
-            <img src="images/4.png" alt="" />
-            <p>PHOTOSHOP</p>
-          </div>
-          <div class="each-skill">
-            <img src="images/5.png" alt="" />
-            <p>CORELDRAW</p>
-          </div>
-        </div>
+      <div class="each-skill">
+        <img src="images/3.png" alt="" />
+        <p>CSS</p>
       </div>
-    </section>
+      <div class="each-skill">
+        <img src="images/1.png" alt="" />
+        <p>JAVASCRIPT</p>
+      </div>
+      <div class="each-skill">
+        <img src="images/4.png" alt="" />
+        <p>PHOTOSHOP</p>
+      </div>
+      <div class="each-skill">
+        <img src="images/5.png" alt="" />
+        <p>CORELDRAW</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>EXPERIENCE</h2>
-    </section>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>EXPERIENCE</h2>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-      <a href="#"><img src="" alt="" /></a>
-    </footer>
+<!-- FOOTER -->
+<footer>
+  <div class="social-links">
+    <a href="#"><img src="images/111.png" alt=""></a> <!--linkedin-->
+    <a href="#"><img src="images/222.png" alt=""></a> <!--GitHub-->
+    <a href="#"><img src="images/333.png" alt=""></a> <!--Upwork-->
+    <a href="#"><img src="images/444.png" alt=""></a> <!--X-->
+    <a href="mailto:joshuasasu922@gmail.com"><img src="images/666.png" alt=""></a>
+    <a href="tel:+2348089729238"><img src="images/555.png" alt=""></a>
+  </div>
+  <p>Copyright &copy; Joshua Stephen Sasu</p>
+</footer>
 
-    <a href="test.html">test page</a>
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
   </body>
 </html>
