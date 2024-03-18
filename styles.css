@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-snap-type: nonex;
 }
 
 body {
@@ -412,7 +413,7 @@ footer {
   }
 
   .each-project {
-    width: 320px;
+    width: 300px;
     margin-bottom: 25px;
   }
 
