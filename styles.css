@@ -386,6 +386,7 @@ footer {
     font-size: 1.2rem;
     margin: 15px;
     width: 350px;
+    outline: 1px solid red;
   }
 
   /* ABOUT ME */
