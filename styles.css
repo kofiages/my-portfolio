@@ -139,13 +139,13 @@ nav ul a:hover {
 #typing-text {
   height: 45px;
   font-family: 'Truculenta';
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(30);
   text-align: center;
   margin: 10px;
-  width: 350;
+  width: 100%;
 }
 
 @keyframes typing {
@@ -380,6 +380,13 @@ footer {
     width: 414px;
   }
 
+  /* text effect */
+  #typing-text {
+    font-size: 1.2rem;
+    margin: 15px;
+    width: 350px;
+  }
+
   /* ABOUT ME */
   #personal {
     display: block;
@@ -448,12 +455,12 @@ footer {
   height: auto;
 } */
 
-/* SKILLS */
-.skill-sets {
-  margin: 25px 0;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-auto-flow: row;
-}
+  /* SKILLS */
+  .skill-sets {
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+  }
 
 }
