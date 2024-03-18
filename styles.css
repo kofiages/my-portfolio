@@ -226,7 +226,7 @@ nav ul a:hover {
 
 /* PROJECTS */
 #projects {
-  width: 100%;
+  /* width: 100%; */
   font-family: "Truculenta";
 }
 
@@ -247,7 +247,7 @@ nav ul a:hover {
   text-align: center;
   width: 400px;
   background: #222;
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 5px 15px;
 }
 
 .each-project:hover {
@@ -263,7 +263,7 @@ nav ul a:hover {
 #projects h3 {
   font-size: 1.5rem;
   color: #fff;
-  margin: 5px;
+  margin-top: 5px;
 }
 
 #projects P {
