@@ -238,9 +238,9 @@ nav ul a:hover {
 }
 
 .project-list {
-  margin: 50px 0 0 0;
-  display: flex;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-flow: auto;
 }
 
 .each-project {
@@ -377,6 +377,9 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
+  body{
+    max-width: 414px;
+  }
   nav {
     width: 414px;
   }
@@ -386,10 +389,10 @@ footer {
     font-size: 1.2rem;
     margin: 15px;
     width: 350px;
-    outline: 1px solid red;
+    outline: 1px solid;
   }
 
-  /* ABOUT ME */
+  /* ABOUT ME */ 
   #personal {
     display: block;
   }
@@ -409,19 +412,59 @@ footer {
   }
 
   /* PROJECTS */
-  .project-list {
-    display: block;
+  #projects {
+    width: 400px;
+    font-family: "Truculenta";
+    outline: 1px solid red;
   }
-
+  
+  .project-content {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .project-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+  }
+  
   .each-project {
     width: 300px;
     margin-top: 25px;
   }
-
+  
+  .each-project:hover {
+    position: relative;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #projects img {
+    width: 100%;
+  }
+  
   #projects h3 {
     font-size: 1rem;
     margin: 10px;
   }
+  
+  #projects P {
+    font-size: 1rem;
+    color: #222;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 50px;
+  }
+
+
+
+
+
+
 
   /* .project-popup {
   display: none;
