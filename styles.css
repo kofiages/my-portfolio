@@ -377,9 +377,10 @@ footer {
 }
 
 @media screen and (max-width: 414px) {
-  body{
+  body {
     max-width: 414px;
   }
+
   nav {
     width: 414px;
   }
@@ -392,7 +393,7 @@ footer {
     outline: 1px solid;
   }
 
-  /* ABOUT ME */ 
+  /* ABOUT ME */
   #personal {
     display: block;
   }
@@ -417,41 +418,41 @@ footer {
     font-family: "Truculenta";
     outline: 1px solid red;
   }
-  
+
   .project-content {
     text-align: center;
     padding: 0 20px;
     font-size: 2rem;
     color: rgb(0, 0, 0);
   }
-  
+
   .project-list {
     display: grid;
     grid-template-columns: auto;
     grid-template-columns: auto;
     grid-auto-flow: row;
   }
-  
+
   .each-project {
     width: 300px;
     margin-top: 25px;
   }
-  
+
   .each-project:hover {
     position: relative;
     transform: scale(1.05);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
+
   #projects img {
     width: 100%;
   }
-  
+
   #projects h3 {
     font-size: 1rem;
     margin: 10px;
   }
-  
+
   #projects P {
     font-size: 1rem;
     color: #222;
